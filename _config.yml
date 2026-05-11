@@ -1,8 +1,6 @@
-title: Fat Octopus Apps                                                                                                                                                            
-  description: "Family-friendly iOS apps"                      
-                                                                                                                                                                                     
+ title: Fat Octopus Apps                                                                                                                                                            
   defaults:                                                    
     - scope:
         path: ""
       values:
-        layout: "default"
+        layout: default
