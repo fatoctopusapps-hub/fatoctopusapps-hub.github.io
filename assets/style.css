@@ -1,0 +1,226 @@
+:root {                                                                                                                                                                            
+    --green: #4CAF50;                                          
+    --green-dark: #3a8a3e;
+    --teal: #2A9D8F;                                                                                                                                                                 
+    --teal-dark: #1F6F65;
+    --bg: #F5FFFB;                                                                                                                                                                   
+    --bg-alt: #E8F8EF;                                                                                                                                                               
+    --surface: #FFFFFF;
+    --text: #1B2A2A;                                                                                                                                                                 
+    --text-light: #5A6E6E;                                                                                                                                                           
+    --border: rgba(0, 0, 0, 0.08);
+    --radius: 12px;                                                                                                                                                                  
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.04);
+  }                                                                                                                                                                                  
+                                                               
+  * {                                                                                                                                                                                
+    box-sizing: border-box;                                    
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }                                                                                                                                                                                  
+  
+  body {                                                                                                                                                                             
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                 "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-size: 17px;                                                                                                                                                                 
+    line-height: 1.65;
+    color: var(--text);                                                                                                                                                              
+    background: linear-gradient(180deg, var(--bg-alt) 0%, var(--bg) 240px);
+    min-height: 100vh;                                                                                                                                                               
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;                                                                                                                                              
+  }                                                            
+                                                                                                                                                                                     
+  /* ---- Header ---- */                                       
+
+  .site-header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 18px 32px;                                                                                                                                                              
+    display: flex;
+    align-items: center;                                                                                                                                                             
+    justify-content: space-between;                            
+    flex-wrap: wrap;
+    gap: 16px;                                                                                                                                                                       
+    box-shadow: var(--shadow);
+  }                                                                                                                                                                                  
+                                                               
+  .site-header .logo {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--teal-dark);
+    text-decoration: none;                                                                                                                                                           
+    letter-spacing: -0.01em;
+  }                                                                                                                                                                                  
+                                                               
+  .site-header .logo:hover {
+    color: var(--green);
+  }
+                                                                                                                                                                                     
+  .site-header nav {
+    display: flex;                                                                                                                                                                   
+    gap: 24px;                                                 
+    flex-wrap: wrap;
+  }
+
+  .site-header nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 15px;                                                                                                                                                                 
+    font-weight: 500;
+    transition: color 0.15s ease;                                                                                                                                                    
+  }                                                            
+
+  .site-header nav a:hover {
+    color: var(--green);
+  }                                                                                                                                                                                  
+  
+  /* ---- Main content ---- */                                                                                                                                                       
+                                                               
+  .content {
+    max-width: 720px;
+    margin: 32px auto;
+    padding: 56px 32px 80px;
+    background: var(--surface);                                                                                                                                                      
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);                                                                                                                                                       
+  }                                                            
+
+  h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--teal-dark);                                                                                                                                                         
+    margin: 0 0 28px 0;
+    letter-spacing: -0.02em;                                                                                                                                                         
+    line-height: 1.2;                                          
+  }                                                                                                                                                                                  
+  
+  h2 {                                                                                                                                                                               
+    font-size: 24px;                                           
+    font-weight: 700;
+    color: var(--text);
+    margin: 40px 0 14px 0;
+    letter-spacing: -0.01em;
+  }                                                                                                                                                                                  
+  
+  h3 {                                                                                                                                                                               
+    font-size: 19px;                                           
+    font-weight: 600;
+    color: var(--text);
+    margin: 28px 0 10px 0;
+  }
+
+  p {                                                                                                                                                                                
+    margin: 0 0 18px 0;
+  }                                                                                                                                                                                  
+                                                               
+  a {
+    color: var(--green-dark);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease;                                                                                                                                             
+  }
+                                                                                                                                                                                     
+  a:hover {                                                    
+    border-bottom-color: var(--green-dark);
+  }
+
+  strong {
+    font-weight: 600;
+    color: var(--text);                                                                                                                                                              
+  }
+                                                                                                                                                                                     
+  em {                                                         
+    color: var(--text-light);
+  }
+
+  ul, ol {
+    margin: 0 0 18px 0;
+    padding-left: 24px;
+  }                                                                                                                                                                                  
+  
+  li {                                                                                                                                                                               
+    margin: 8px 0;                                             
+  }
+
+  li::marker {
+    color: var(--green);
+  }
+
+  code {
+    font-family: "SF Mono", "JetBrains Mono", Monaco, Consolas, monospace;
+    font-size: 14px;                                                                                                                                                                 
+    background: var(--bg-alt);
+    padding: 2px 8px;                                                                                                                                                                
+    border-radius: 6px;                                                                                                                                                              
+    color: var(--teal-dark);
+  }                                                                                                                                                                                  
+                                                               
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+  }                                                                                                                                                                                  
+  
+  blockquote {                                                                                                                                                                       
+    margin: 24px 0;                                            
+    padding: 16px 24px;
+    border-left: 4px solid var(--green);
+    background: var(--bg-alt);
+    border-radius: 0 var(--radius) var(--radius) 0;                                                                                                                                  
+    color: var(--text-light);
+  }                                                                                                                                                                                  
+                                                               
+  blockquote p:last-child {                                                                                                                                                          
+    margin-bottom: 0;
+  }                                                                                                                                                                                  
+                                                               
+  /* ---- Footer ---- */
+
+  .site-footer {
+    border-top: 1px solid var(--border);
+    padding: 32px 24px;
+    text-align: center;                                                                                                                                                              
+    color: var(--text-light);
+    font-size: 14px;                                                                                                                                                                 
+    background: var(--surface);                                
+  }
+
+  .site-footer p {
+    margin: 0;
+  }                                                                                                                                                                                  
+  
+  /* ---- Mobile ---- */                                                                                                                                                             
+                                                               
+  @media (max-width: 720px) {
+    body {
+      font-size: 16px;
+    }
+    .site-header {
+      padding: 14px 18px;
+    }                                                                                                                                                                                
+    .site-header nav {
+      width: 100%;                                                                                                                                                                   
+      justify-content: flex-start;                             
+      gap: 18px;
+    }
+    .content {
+      margin: 16px 0;                                                                                                                                                                
+      padding: 36px 22px 56px;
+      border-radius: 0;                                                                                                                                                              
+      box-shadow: none;                                        
+    }
+    h1 {
+      font-size: 28px;
+    }                                                                                                                                                                                
+    h2 {
+      font-size: 20px;                                                                                                                                                               
+    }                                                          
+    h3 {
+      font-size: 17px;
+    }
+  }
