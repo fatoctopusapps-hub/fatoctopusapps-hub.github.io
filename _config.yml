@@ -1,12 +1,8 @@
-title: Fat Octopus Apps
-  description: Family-friendly iOS apps — privacy, terms, support, and trader info.
+title: Fat Octopus Apps                                                                                                                                                            
+  description: "Family-friendly iOS apps"                      
                                                                                                                                                                                      
-  defaults:
+  defaults:                                                    
     - scope:
         path: ""
       values:
         layout: "default"
-
-  # Stop Jekyll's default theme so our layout takes over
-  theme: null
-  plugins: []
